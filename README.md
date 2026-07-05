@@ -1,51 +1,155 @@
-Nova · Observatory Chat
+# 🤖 Nova AI
 
-A single-file, self-contained AI chat interface with a star-chart aesthetic — deep void backgrounds, a live constellation canvas, and warm starlight-gold accents. Talks to Groq's chat API and runs entirely in your browser.
+**Nova AI** is an intelligent conversational AI chatbot built to provide natural, context-aware responses using modern Large Language Models (LLMs). It features a clean interface, fast response generation, and an extensible architecture that can be adapted for customer support, personal assistance, educational applications, and more.
 
-Features
+---
 
+## ✨ Features
 
-Multiple conversations — create, search, pin, and delete chats, all saved in your browser's local storage
-Live constellation background — stars connect with faint lines when near each other or your cursor, with occasional shooting stars
-Rich messages — markdown-style bold/italic/inline code, syntax-styled code blocks with a copy button, date separators ("Today" / "Yesterday"), copy / like / regenerate on any message
-Customizable — editable display name, five accent color themes, export any conversation to a .txt file
-Responsive — collapsible sidebar on mobile, keyboard focus states, respects reduced-motion preferences
+* 💬 Natural language conversations
+* 🧠 Context-aware responses
+* ⚡ Fast and responsive chat interface
+* 🔒 Secure API key management
+* 📱 Responsive and modern UI
+* 📚 Conversation history support
+* 🌐 Easy deployment and customization
 
+---
 
-Getting started
+## 🛠️ Tech Stack
 
+### Frontend
 
-Open nova-ai-chat.html in any modern browser (Chrome, Safari, Firefox, Edge). No build step, no server required.
-Click the gear icon (⚙️) to open Settings.
-Paste in a Groq API key. Get a free one at console.groq.com/keys.
-Start chatting.
+* React.js
+* Tailwind CSS
+* JavaScript
 
+### Backend
 
-Your API key is stored only in your own browser's local storage — it is never sent anywhere except directly to Groq's API when you send a message.
+* FastAPI / Flask
+* Python
 
-Choosing a model
+### AI
 
-Use the model picker in the top-right of the chat header to switch between:
+* OpenAI API / Hugging Face Transformers
+* LangChain (optional)
 
-ModelNotesLlama 3.3 · 70BBest general-purpose qualityMixtral · 8x7BFaster, good for longer contextGemma 2 · 9BLightest and fastest
+### Database
 
-Data & privacy
+* SQLite / PostgreSQL
 
-Everything Nova stores lives in localStorage in your browser, under these keys:
+---
 
+## 📂 Project Structure
 
-nova_chats — your conversations and messages
-nova_api_key — your Groq API key
-nova_user_name, nova_accent, nova_active — display preferences
+```text
+Nova-AI/
+│── frontend/
+│── backend/
+│── models/
+│── static/
+│── templates/
+│── requirements.txt
+│── README.md
+└── .env
+```
 
+---
 
-Use Settings → Clear all conversations to wipe your chat history, or clear your browser's site data for this file to remove everything, including the API key.
+## 🚀 Installation
 
-Known limitations
+### 1. Clone the repository
 
+```bash
+git clone https://github.com/ArshZaidi/Nova-AI.git
+cd Nova-AI
+```
 
-Attach and voice-input buttons are placeholders for now — they don't yet do anything.
-No streaming responses; replies appear once fully generated.
-Local storage has a size ceiling (usually several MB), so extremely long-running chat histories could eventually hit browser limits.
+### 2. Create a virtual environment
 
-Everything lives in one file: nova-ai-chat.html. Open it, use it, or copy it — no dependencies to install beyond the Google Fonts loaded via CDN link in the <head>.
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux/macOS**
+
+```bash
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure environment variables
+
+Create a `.env` file:
+
+```env
+API_KEY=your_api_key_here
+```
+
+### 5. Run the application
+
+```bash
+python app.py
+```
+
+or
+
+```bash
+uvicorn main:app --reload
+```
+
+---
+
+## 📸 Demo
+
+Add screenshots or a GIF of the chatbot here.
+
+---
+
+## 📈 Future Improvements
+
+* Voice conversations
+* Image understanding
+* Multi-language support
+* Authentication
+* Chat export
+* Vector database for long-term memory
+* File upload and document Q&A
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Open a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Arsh Raza Zaidi**
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
