@@ -1,42 +1,54 @@
-# 🤖 Nova AI
+# 🌌 Nova AI
 
-**Nova AI** is an intelligent conversational AI chatbot built to provide natural, context-aware responses using modern Large Language Models (LLMs). It features a clean interface, fast response generation, and an extensible architecture that can be adapted for customer support, personal assistance, educational applications, and more.
+> **A modern AI chatbot powered by Groq with an elegant observatory-inspired interface.**
+
+Nova AI is a fast, responsive, and beautifully designed AI chatbot that delivers intelligent conversations through Groq's Large Language Models. Featuring a premium glassmorphism interface, persistent chat history, customizable themes, and multi-model support, Nova AI provides a polished ChatGPT-like experience directly in your browser.
 
 ---
 
 ## ✨ Features
 
-* 💬 Natural language conversations
-* 🧠 Context-aware responses
-* ⚡ Fast and responsive chat interface
-* 🔒 Secure API key management
-* 📱 Responsive and modern UI
-* 📚 Conversation history support
-* 🌐 Easy deployment and customization
+* 🤖 AI-powered conversations using **Groq API**
+* ⚡ Ultra-fast responses
+* 🧠 Multiple LLM support
+
+  * Llama 3.3 70B
+  * Mixtral 8x7B
+  * Gemma 2
+* 💬 Persistent conversation history
+* 📌 Pin important chats
+* 🔍 Search previous conversations
+* 📤 Export conversations as text files
+* 🎨 Customizable accent colors
+* 👤 Custom display name
+* 📱 Fully responsive design
+* 🌠 Animated starfield background
+* 😀 Emoji picker
+* 📋 One-click copy for messages and code blocks
+* ❤️ Like and regenerate AI responses
+* 🔒 Secure browser-side API key storage using LocalStorage
+* 🌙 Premium Observatory-inspired glassmorphism UI
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Built With
 
 ### Frontend
 
-* React.js
-* Tailwind CSS
-* JavaScript
-
-### Backend
-
-* FastAPI / Flask
-* Python
+* HTML5
+* CSS3
+* Vanilla JavaScript
 
 ### AI
 
-* OpenAI API / Hugging Face Transformers
-* LangChain (optional)
+* Groq API
+* Llama 3.3 70B
+* Mixtral 8x7B
+* Gemma 2
 
-### Database
+### Storage
 
-* SQLite / PostgreSQL
+* Browser LocalStorage
 
 ---
 
@@ -44,19 +56,14 @@
 
 ```text
 Nova-AI/
-│── frontend/
-│── backend/
-│── models/
-│── static/
-│── templates/
-│── requirements.txt
+│── index.html
 │── README.md
-└── .env
+└── LICENSE
 ```
 
 ---
 
-## 🚀 Installation
+## 🚀 Getting Started
 
 ### 1. Clone the repository
 
@@ -65,69 +72,69 @@ git clone https://github.com/ArshZaidi/Nova-AI.git
 cd Nova-AI
 ```
 
-### 2. Create a virtual environment
+### 2. Open the project
 
-```bash
-python -m venv venv
+Simply open:
+
+```text
+index.html
 ```
 
-Activate it:
+or run a local server.
 
-**Windows**
-
-```bash
-venv\Scripts\activate
-```
-
-**Linux/macOS**
+Example:
 
 ```bash
-source venv/bin/activate
+python -m http.server
 ```
 
-### 3. Install dependencies
+Then open
 
-```bash
-pip install -r requirements.txt
 ```
-
-### 4. Configure environment variables
-
-Create a `.env` file:
-
-```env
-API_KEY=your_api_key_here
-```
-
-### 5. Run the application
-
-```bash
-python app.py
-```
-
-or
-
-```bash
-uvicorn main:app --reload
+http://localhost:8000
 ```
 
 ---
 
-## 📸 Demo
+## 🔑 API Key Setup
 
-Add screenshots or a GIF of the chatbot here.
+Nova AI uses the **Groq API**.
+
+1. Create a free Groq account.
+2. Generate an API key.
+3. Open **Settings** inside Nova AI.
+4. Paste your API key.
+5. Start chatting.
+
+Your API key is stored **locally in your browser** and is never sent anywhere except Groq's API.
 
 ---
 
-## 📈 Future Improvements
+## 🌟 Highlights
 
-* Voice conversations
-* Image understanding
-* Multi-language support
-* Authentication
+* Beautiful observatory-inspired interface
+* Smooth animations
+* Responsive mobile layout
+* Conversation management
 * Chat export
-* Vector database for long-term memory
-* File upload and document Q&A
+* Markdown & code block rendering
+* Syntax-friendly code display
+* Modern UI/UX
+* Lightweight and dependency-free
+
+---
+
+## 🔮 Future Improvements
+
+* Voice input
+* File uploads
+* Image generation
+* Document chat
+* User authentication
+* Cloud chat synchronization
+* Theme presets
+* Dark/Light mode
+* Streaming AI responses
 
 ---
 
@@ -135,10 +142,26 @@ Add screenshots or a GIF of the chatbot here.
 
 Contributions are welcome!
 
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes.
-4. Open a Pull Request.
+1. Fork the repository
+2. Create your feature branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Added feature"
+```
+
+4. Push to your branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
 
 ---
 
@@ -152,4 +175,4 @@ This project is licensed under the MIT License.
 
 **Arsh Raza Zaidi**
 
-If you found this project useful, consider giving it a ⭐ on GitHub!
+If you enjoyed this project, consider giving it a ⭐ on GitHub!
